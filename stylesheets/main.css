@@ -40,9 +40,48 @@ h1.title {
   width: 650px;
 } 
 
+
+/*Footer Section*/
 .footer {
   background-color: #645570;  
   z-index: 1; 
   height: 65px;
   width: 100vw;
+}
+
+table.dis-credit {
+  display: block;
+  padding-left: 1%;
+  margin-top: -2.7%;
+  margin-left: 27%;
+}
+
+td.link {
+  width: 14%; 
+  opacity: 1;
+  -webkit-transform: scale(1,1);
+  transform: scale(1,1);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}  
+
+td.link:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  -webkit-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+} 
+
+p.credit {
+  color: white;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 1.7%;
+  font-family: 'Raleway', sans-serif;
+}
+
+img.license {
+  float: right;
+  margin-top: -2.7%;
+  margin-right: 5%;
 }
