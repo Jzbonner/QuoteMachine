@@ -1,0 +1,48 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  margin-left: -15px;
+}
+
+.main {
+  background-color: #d4af37;
+  height: 100vh;
+  width: 100vw;  
+}
+
+h1.title {
+  font-family: 'Raleway', cursive;
+  font-size: 32px;
+  text-align: center;
+  margin-left: 15px;
+  margin-top: 8%;
+  margin-bottom: -6%;
+  
+}
+
+.quotecard {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  background-color: #dddddd;
+  box-shadow: 2px 4px 5px #161223;
+  z-index: 1;
+  border-radius: 5px; 
+  height: 350px;
+  width: 650px;
+} 
+
+.footer {
+  background-color: #645570;  
+  z-index: 1; 
+  height: 65px;
+  width: 100vw;
+}
