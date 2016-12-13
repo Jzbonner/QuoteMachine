@@ -14,9 +14,7 @@ body {
   background-image: url(https://goo.gl/IAcCN6);
   background-position: center center;
   background-size: cover;
-  height: calc(100vh - 65px);
-  background-color: #115f91;
-  height: 100vh;
+  height: calc(100vh - 65px);  
   width: 100vw;  
   -webkit-filter: contrast(160%);
   filter: contrast(160%);
@@ -53,8 +51,7 @@ h1.title {
 
 /*Footer Section*/
 .footer {
-  /*background-color: #645570;*/ 
-  background-color: #fd8f2a;  
+  /*background-color: #645570;*/   
   z-index: 1; 
   height: 65px;
   width: 100vw;
