@@ -1,0 +1,296 @@
+// Global Variables
+$primaryColor: rgba(229,224,213, 0.7);
+$secondaryColor: rgba(21,28,52, 0.5);
+$standBorder: 2px solid rgba(116,138,154, 0.8);
+$sideBorder: 7px solid rgba(213,218,229, 0.9);
+$fontColor: rgba(48,48,54, 0.8);
+$standTransition: all 0.3s ease-in-out;
+$standClick: translateY(.11rem);
+
+// HTML Media Queries 
+html {
+    font-size: 62.5%;
+
+    @media (min-width: 20rem) {
+        font-size: 200%;
+    }
+
+    @media (min-width: 30rem) {
+        font-size: 300%;
+    }
+}
+
+// Stylesheet Code 
+body {
+    background: $primaryColor;
+}
+
+.container {    
+    padding: 0 .8rem 0 .8rem; 
+    width: 100%;  
+}
+
+// Header
+.header {
+    background-color: rgba(213,218,229, 0.6);
+    border-left: 15px solid rgba(116,138,154, 0.8);   
+    border-radius: 4px;
+    height: 90px;
+    margin: .7rem 0 0.75rem 0; 
+    max-width: 30rem;
+}
+
+.header-bg {
+    background-image: url("https://goo.gl/9sZe0Y");
+    height: 90px;
+    max-width: 30rem;
+}
+
+h1.intro {
+    color: $fontColor;
+    font-family: 'Raleway', serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: .45rem 0 0 .25rem;
+}
+
+#qt-left, #qt-right {
+    font-size: 0.4rem;    
+    color: $fontColor;
+}
+
+#qt-left {
+    -webkit-transform:scaleX(-1);
+    transform: scaleX(-1);
+}
+
+table.head {    
+    margin-left: 1.5rem;
+    margin-top: .6rem;
+    width: 4rem;    
+}
+
+#head-img {
+    font-size: 0.8rem;
+    margin: 0 0 0 0;
+}
+
+.end-design {    
+    width: 1.7rem;
+    height: 1.7rem;
+    & #slash-left {
+        background-color: rgba(116,138,154, 0.8);
+        border-radius: 5px;
+        height: 3.2rem;
+        margin: -0.7rem 0 0 0;
+        width: .22rem;  
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg);      
+    }
+    & #slash-right {
+        background-color: rgba(116,138,154, 0.8);
+        border-radius: 5px;
+        height: 3.2rem;
+        margin: -0.7rem 0 0 -0.2rem;
+        width: .22rem;
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg);
+    }
+}
+
+// Quote Card 
+.card {    
+    height: 380px;
+    margin: 0 0 0.5rem 0;
+    max-width: 30rem;
+}
+
+.quote-view {
+    //border: $standBorder;
+    height: 5.5rem;
+    margin-top: -0.15rem;
+}
+
+.tag-view {
+    //border: $standBorder;
+    height: 2rem;
+    margin: .15rem 0 0 .15rem;
+}
+
+h2.quote {
+    color: rgba(154,80,93, 0.7);   
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 2rem .5rem 1rem;
+}
+
+h3.author {
+    border-top: 2px solid rgba(154,80,93, 0.6);  
+    color: rgba(154,80,93, 0.6);   
+    font-size: .45rem;
+    font-style: italic;
+    margin: 0.35rem 2rem 3.8rem 1rem;
+    padding-top: .25rem;
+}
+
+//Twitter Functionality 
+.twttr {      
+    border-radius: 5px;
+    height: 80px;
+    margin: -2.4rem 0 0.5rem 0;
+    overflow: hidden;
+    width: 7rem;
+    -webkit-transition: $standTransition;
+    transition: $standTransition;
+    &:hover {           
+        cursor: pointer;
+        margin: -2.4rem 0 0.5rem .5rem;
+    }
+    &:active {
+        -webkit-transform: $standClick;
+        transform: $standClick;
+    }
+    &:hover p.twt-msg {
+        $hoverColor: rgba(239,236,229, 0.9);
+        color: $hoverColor;
+        margin: .5rem 0 0 .25rem;
+    }
+    &:hover .twt-divide {
+        $hoverColor: rgba(48,48,54, 0.5);
+        background-color: $hoverColor;
+        border-left: 10px solid rgba(154,80,93, 0.4); 
+    }
+    &:hover .twt-divide p.twt-msg #twt-load {
+        animation-name: rotate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+        $primaryColorbtn: rgba(229,224,213, 0.9);
+        color: $primaryColorbtn; 
+    }
+}
+
+img.twt-logo {
+    height: 1rem;
+    margin: .3rem 0 0 .3rem;
+    width: 1rem;
+}
+
+.twt-divide {
+    background-color: none;  
+    border-left: 10px solid rgba(200,189,166, 0.4);
+    border-radius: 5px;
+    height: 80px;
+    overflow: hidden;
+    -webkit-transition: $standTransition;
+    transition: $standTransition;
+}
+
+p.twt-msg {
+    color: rgba(154,80,93, 0.7); 
+    font-size: .40rem;
+    margin: .5rem 0 0 .25rem;
+    -webkit-transition: $standTransition;
+    transition: $standTransition;
+}
+
+#twt-load {
+    $primaryColorbtn: rgba(229,224,213, 0.3);
+
+    color: $primaryColorbtn;
+    margin: -.1rem 0 0 .2rem;    
+    font-size: .4rem;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+//Footer
+.footer {    
+    border: 3px solid rgba(154,80,93, 0.4);   
+    border-radius: 4px;
+    height: 86px;    
+    margin: -2.2rem 0 0 2.2rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    &:hover table.media {
+        background-color: $secondaryColor;  
+    }
+    &:hover table.media td.cell img.tdm-logo {
+        -webkit-filter: invert(10%);
+        filter: invert(10%);
+    }
+    &:hover table.media td.cell #triangle-left {
+        border-right: 21px solid $primaryColor;
+        margin: 0 0 0 .5rem;  
+    }
+    &:hover table.media td.cell #triangle-right {
+        border-left: 15px solid $secondaryColor;
+        margin: -0.16rem 0 0 -0.30rem;
+    }
+}
+
+p.tdm {    
+    color: rgba(154,80,93, 0.6); 
+    font-size: .3rem;
+    font-weight: bold;
+    margin: .15rem 0 0 .40rem;
+    padding-bottom: .06rem;
+    text-align: right;    
+}
+
+#tdm {
+    font-size: .4rem;    
+    margin-top: .18rem;
+    
+}
+
+table.media {   
+    background-color: none;         
+    border-radius: 4px;
+    height: 1rem;    
+    max-width: 7.4rem;
+    -webkit-transition: $standTransition;
+    transition: $standTransition;
+   
+}
+
+td.cell {    
+    height: 1.15rem;    
+}
+
+img.tdm-logo {
+    display: block;
+    margin: -0.12rem 0 0 .5rem;
+    -webkit-filter: invert(50%);
+    filter: invert(50%);
+    -webkit-transition: $standTransition;
+    transition: $standTransition;
+}
+
+#triangle-left {   
+    border-bottom: 21px solid transparent;    
+	border-right: 21px solid rgba(229,224,213, 0.3);
+    border-top: 21px solid transparent;
+    border-radius: 2px;
+    margin: 0 0 0 1.5rem;  
+	height: 0;
+    width: 0;	 
+    -webkit-transition: $standTransition;
+    transition: $standTransition;   
+}
+
+#triangle-right {
+    border-bottom: 21px solid transparent;    
+	border-left: 21px solid rgba(21,28,52, 0.2);
+    border-top: 21px solid transparent;
+    border-radius: 2px;       
+	height: 0;
+    margin: -0.16rem 0 0 0;
+    width: 0;	 
+    -webkit-transition: $standTransition;
+    transition: $standTransition; 
+}
