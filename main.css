@@ -58,7 +58,6 @@ table.head {
   max-width: 30rem; }
 
 .quote-view {
-  border: 2px solid rgba(116, 138, 154, 0.8);
   height: 5.5rem;
   margin-top: -0.15rem; }
 
@@ -139,7 +138,7 @@ p.twt-msg {
   to {
     transform: rotate(360deg); } }
 p.tdm {
-  border: 2px solid rgba(116, 138, 154, 0.8);
+  border: 2px solid rgba(154, 80, 93, 0.6);
   border-radius: 4px;
   color: rgba(154, 80, 93, 0.6);
   font-size: .3rem;

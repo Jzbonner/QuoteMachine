@@ -1,7 +1,7 @@
 // Global Variables
 $primaryColor: rgba(229,224,213, 0.7);
 $secondaryColor: rgba(21,28,52, 0.5);
-$standBorder: 2px solid rgba(116,138,154, 0.8);
+$standBorder: 2px solid rgba(154,80,93, 0.6);;
 $sideBorder: 7px solid rgba(213,218,229, 0.9);
 $fontColor: rgba(48,48,54, 0.8);
 $standTransition: all 0.3s ease-in-out;
@@ -84,7 +84,7 @@ table.head {
 }
 
 .quote-view {
-    border: $standBorder;
+    //border: $standBorder;
     height: 5.5rem;
     margin-top: -0.15rem;
 }
