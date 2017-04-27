@@ -2,17 +2,13 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-size: 1.4rem;
   background-image: url(https://goo.gl/5suJb3);
   background-position: top center;
-  max-width: 100vw; }
+  font-size: 1.4rem;
+  overflow-x: hidden; }
 
 .container-fluid {
   padding: 1rem; }
-
-.head {
-  border-bottom: 5px solid white;
-  height: 15rem; }
 
 .header {
   background-color: rgba(139, 60, 60, 0.6);
@@ -65,14 +61,14 @@ h1 {
 
 .main {
   border-radius: 3px;
-  height: 32rem;
+  height: 34rem;
   margin: 0.5rem 0 0 0; }
 
 .card {
   background: rgba(236, 236, 236, 0.8);
   border-right: 15px solid white;
   border-radius: 4px;
-  height: 28rem;
+  height: 30rem;
   margin: 2rem 0 0 0; }
 
 h2 {
@@ -108,15 +104,19 @@ button#twttr {
 
 footer {
   background: rgba(42, 42, 42, 0.9);
-  height: 6rem; }
+  height: 6rem;
+  margin: 0 auto;
+  padding: 0; }
 
 p.credit {
+  border-radius: 2px;
   color: white;
-  margin-top: .7rem; }
+  margin: .1rem 2rem 0 0;
+  padding: .5rem; }
 
 table.media {
   margin: 3rem auto;
-  width: 50rem; }
+  width: 30rem; }
   table.media tr.shift {
     height: 6rem; }
 
