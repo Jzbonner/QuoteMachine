@@ -52,33 +52,13 @@ table.head {
   font-size: 0.8rem;
   margin: 0 0 0 0; }
 
-.end-design {
-  height: 1.7rem;
-  overflow: hidden;
-  width: 1.7rem; }
-  .end-design #slash-left {
-    background-color: rgba(116, 138, 154, 0.8);
-    border-radius: 5px;
-    height: 3.2rem;
-    margin: -0.7rem 0 0 0;
-    width: .22rem;
-    -webkit-transform: rotate(18deg);
-    transform: rotate(18deg); }
-  .end-design #slash-right {
-    background-color: rgba(116, 138, 154, 0.8);
-    border-radius: 5px;
-    height: 3.2rem;
-    margin: -0.7rem 0 0 -0.2rem;
-    width: .22rem;
-    -webkit-transform: rotate(18deg);
-    transform: rotate(18deg); }
-
 .card {
   height: 380px;
   margin: 0 0 0.5rem 0;
   max-width: 30rem; }
 
 .quote-view {
+  border: 2px solid rgba(116, 138, 154, 0.8);
   height: 5.5rem;
   margin-top: -0.15rem; }
 

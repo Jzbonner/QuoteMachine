@@ -76,30 +76,6 @@ table.head {
     margin: 0 0 0 0;
 }
 
-.end-design {    
-    height: 1.7rem;
-    overflow: hidden;
-    width: 1.7rem;    
-    & #slash-left {
-        background-color: rgba(116,138,154, 0.8);
-        border-radius: 5px;
-        height: 3.2rem;
-        margin: -0.7rem 0 0 0;
-        width: .22rem;  
-        -webkit-transform: rotate(18deg);
-        transform: rotate(18deg);      
-    }
-    & #slash-right {
-        background-color: rgba(116,138,154, 0.8);
-        border-radius: 5px;
-        height: 3.2rem;
-        margin: -0.7rem 0 0 -0.2rem;
-        width: .22rem;
-        -webkit-transform: rotate(18deg);
-        transform: rotate(18deg);
-    }
-}
-
 // Quote Card 
 .card {    
     height: 380px;
@@ -108,7 +84,7 @@ table.head {
 }
 
 .quote-view {
-    //border: $standBorder;
+    border: $standBorder;
     height: 5.5rem;
     margin-top: -0.15rem;
 }
