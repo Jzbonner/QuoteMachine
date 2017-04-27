@@ -6,94 +6,65 @@
   <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/GNqEta"/>
   <title>Quote Machine</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">  
+
+  <!--Bootstrap CDN and links to stylesheets -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
   <link rel="stylesheet" type="text/css" href="main.css" media="screen">  
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/main.js" type="text/javascript"></script>
 
   <script src="https://use.fontawesome.com/bbfdc0a89e.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poiret+One|Raleway" rel="stylesheet">
 </head>
+
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="header-bg">
-          <div class="header">
-            <div class="col-md-6">
-              <div class="row">
-                <div class="col-md-11">
-                  <i id="qt-left" class="fa fa-quote-right" aria-hidden="true"></i>
-                </div>                
-                <div class="col-md-1">                  
-                  <i id="qt-right" class="fa fa-quote-right" aria-hidden="true"></i> 
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <h1 class="intro">Random Quote Machine.</h1>      
-                </div>
-              </div>                                  
-            </div>
-            <div class="col-md-6">
-              <div class="row">  
-                <div class="col-md-1"></div>          
-                <div class="col-md-4">              
-                  <p class="tdm">Jarrett Bonner <i id="tdm" class="fa fa-user-o" aria-hidden="true"></i></p>                      
-                </div>
-                <div class="col-md-6 shift">
-                  <table class="media">
-                    <tr class="shift">
-                      <td class="cell"><a href=""><img class="tdm-logo" src="https://goo.gl/O1Chgj" alt="contact" height="25px" width="25px"></a></td>
-                      <td class="cell"><a href="https://github.com/Jzbonner"><img class="tdm-logo" src="https://goo.gl/TbkjwE" alt="contact" height="25px" width="25px"></a></td>
-                      <td class="cell"><a href="https://twitter.com/jarrett_bonner"><img class="tdm-logo" src="https://goo.gl/QI1bnR" alt="contact" height="25px" width="25px"></a></td>
-                      <td class="cell"><a href="https://www.linkedin.com/in/jarrett-bonner-28048339"><img class="tdm-logo" src="https://goo.gl/wcyzFc" alt="contact" height="25px" width="25px"></a></td>                      
-                    </tr>
-                  </table>              
-                </div> 
-              </div>           
-            </div>            
-          </div>     
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card">
-          <div class="row quote-view">
-            <div class="col-md-10">
-              <h2 class="quote">Most of the shadows of life are caused by standing in our own sunshine.</h2>  
-            </div>
+  <div class="container-fluid head text-center">
+    <div class="header">
+      <div class="row">
+        <div class="col-xs-1">
+          <div class="square">
+            <div class="square-offset"></div>
           </div>
-          <div class="row tag-view">
-            <div class="col-md-5">
-              <h3 class="author">- Ralph Waldo Emerson</h3>
-            </div>
-          </div>
-                  
         </div>
-      </div>
-    </div> 
-    <div class="row">
-      <div class="col-md-4"></div>
-      <div class="col-md-4">
-        <div class="twttr">
-          <div class="row">
-            <div class="col-md-3">
-              <img class="twt-logo" src="https://goo.gl/a2wI1E" alt="twt-logo" />
-            </div>
-            <div class="col-md-9 twt-divide">
-              <p class="twt-msg">share on twitter. <i id="twt-load" class="fa fa-circle-o-notch" aria-hidden="true"></i></p>
-            </div>
-          </div>          
+        <div class="col-xs-10">
+          <h1>Random Quote Machine.</h1>
         </div>
-      </div>
-      <div class="col-md-4"></div>
+      </div>       
     </div>    
   </div>
+  <div class="container-fluid main">
+    <div class="card">
+      <h2>Quote Here</h2>   
+    </div>
+  </div>
+  <div class="container-fluid select text-center">
+    <div class="row">
+      <div class="col-xs-3">
+        <button id="quote">Quote. <i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+      </div>
+      <div class="col-xs-3">
+        <button id="twttr">Tweet it. <i class="fa fa-twitter-square" aria-hidden="true"></i></button>
+      </div>
+    </div>   
+  </div>  
+  <footer id="credit">
+    <div class="row">
+      <div class="col-xs-12">        
+        <table class="media">
+          <tr class="shift">
+            <td class="cell"><p class="credit">Jarrett Bonner <i class="fa fa-superpowers" aria-hidden="true"></i></p></td>
+            <td class="cell"><a href=""><img class="tdm-logo" src="https://goo.gl/O1Chgj" alt="contact" height="20px" width="20px"></a></td>
+            <td class="cell"><a href="https://github.com/Jzbonner"><img class="tdm-logo" src="https://goo.gl/TbkjwE" alt="contact" height="20px" width="20px"></a></td>
+            <td class="cell"><a href="https://twitter.com/jarrett_bonner"><img class="tdm-logo" src="https://goo.gl/QI1bnR" alt="contact" height="20px" width="20px"></a></td>
+            <td class="cell"><a href="https://www.linkedin.com/in/jarrett-bonner-28048339"><img class="tdm-logo" src="https://goo.gl/wcyzFc" alt="contact" height="20px" width="20px"></a></td>                      
+          </tr>
+        </table>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
