@@ -22,7 +22,7 @@ html {
 
 // Stylesheet Code 
 body {
-    background: $primaryColor;
+    background: $primaryColor;    
 }
 
 .container {    
@@ -35,14 +35,14 @@ body {
     background-color: rgba(213,218,229, 0.6);
     border-left: 15px solid rgba(116,138,154, 0.8);   
     border-radius: 4px;
-    height: 90px;
+    height: 120px;
     margin: .7rem 0 0.75rem 0; 
     max-width: 30rem;
 }
 
 .header-bg {
     background-image: url("https://goo.gl/9sZe0Y");
-    height: 90px;
+    height: 120px;
     max-width: 30rem;
 }
 
@@ -51,12 +51,13 @@ h1.intro {
     font-family: 'Raleway', serif;
     font-size: 0.9rem;
     font-weight: 400;
-    margin: .45rem 0 0 .25rem;
+    margin: -0.5rem 0 0 .66rem;    
 }
 
 #qt-left, #qt-right {
-    font-size: 0.4rem;    
     color: $fontColor;
+    font-size: 0.4rem;   
+    margin: 0.75rem 0 0 0;
 }
 
 #qt-left {
@@ -66,7 +67,7 @@ h1.intro {
 
 table.head {    
     margin-left: 1.5rem;
-    margin-top: .6rem;
+    margin-top: .95rem;
     width: 4rem;    
 }
 
@@ -76,8 +77,9 @@ table.head {
 }
 
 .end-design {    
-    width: 1.7rem;
     height: 1.7rem;
+    overflow: hidden;
+    width: 1.7rem;    
     & #slash-left {
         background-color: rgba(116,138,154, 0.8);
         border-radius: 5px;
@@ -121,7 +123,7 @@ h2.quote {
     color: rgba(154,80,93, 0.7);   
     font-size: 1rem;
     font-weight: bold;
-    margin: 1rem 2rem .5rem 1rem;
+    margin: 1.75rem 2rem .5rem 1rem;
 }
 
 h3.author {
@@ -144,7 +146,7 @@ h3.author {
     transition: $standTransition;
     &:hover {           
         cursor: pointer;
-        margin: -2.4rem 0 0.5rem .5rem;
+        margin: -2.8rem 0 0.5rem 0;
     }
     &:active {
         -webkit-transform: $standClick;
@@ -209,37 +211,16 @@ p.twt-msg {
 }
 
 //Footer
-.footer {    
-    border: 3px solid rgba(154,80,93, 0.4);   
-    border-radius: 4px;
-    height: 86px;    
-    margin: -2.2rem 0 0 2.2rem;
-    padding-top: .25rem;
-    padding-bottom: .25rem;
-    &:hover table.media {
-        background-color: $secondaryColor;  
-    }
-    &:hover table.media td.cell img.tdm-logo {
-        -webkit-filter: invert(10%);
-        filter: invert(10%);
-    }
-    &:hover table.media td.cell #triangle-left {
-        border-right: 21px solid $primaryColor;
-        margin: 0 0 0 .5rem;  
-    }
-    &:hover table.media td.cell #triangle-right {
-        border-left: 15px solid $secondaryColor;
-        margin: -0.16rem 0 0 -0.30rem;
-    }
-}
-
 p.tdm {    
+    border: $standBorder;
+    border-radius: 4px;
     color: rgba(154,80,93, 0.6); 
     font-size: .3rem;
     font-weight: bold;
-    margin: .15rem 0 0 .40rem;
-    padding-bottom: .06rem;
-    text-align: right;    
+    margin: .85rem 0 1rem 0;
+    padding-bottom: 8px;    
+    text-align: center;
+        
 }
 
 #tdm {
@@ -252,10 +233,13 @@ table.media {
     background-color: none;         
     border-radius: 4px;
     height: 1rem;    
-    max-width: 7.4rem;
+    max-width: 7.4rem;    
     -webkit-transition: $standTransition;
-    transition: $standTransition;
-   
+    transition: $standTransition;   
+}
+
+.shift {
+    margin-top: 0.80rem;
 }
 
 td.cell {    
@@ -271,26 +255,3 @@ img.tdm-logo {
     transition: $standTransition;
 }
 
-#triangle-left {   
-    border-bottom: 21px solid transparent;    
-	border-right: 21px solid rgba(229,224,213, 0.3);
-    border-top: 21px solid transparent;
-    border-radius: 2px;
-    margin: 0 0 0 1.5rem;  
-	height: 0;
-    width: 0;	 
-    -webkit-transition: $standTransition;
-    transition: $standTransition;   
-}
-
-#triangle-right {
-    border-bottom: 21px solid transparent;    
-	border-left: 21px solid rgba(21,28,52, 0.2);
-    border-top: 21px solid transparent;
-    border-radius: 2px;       
-	height: 0;
-    margin: -0.16rem 0 0 0;
-    width: 0;	 
-    -webkit-transition: $standTransition;
-    transition: $standTransition; 
-}
