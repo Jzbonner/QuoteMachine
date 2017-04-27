@@ -17,9 +17,11 @@ html {
 body {       
     background-image: url(https://goo.gl/5suJb3);
     background-position: top center;
-    font-size: $bodyfont; 
+    font-size: $bodyfont;        
+}
+
+html, body {
     overflow-x: hidden;
-    
 }
 
 .container-fluid{

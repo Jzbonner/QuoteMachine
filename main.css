@@ -4,7 +4,9 @@ html {
 body {
   background-image: url(https://goo.gl/5suJb3);
   background-position: top center;
-  font-size: 1.4rem;
+  font-size: 1.4rem; }
+
+html, body {
   overflow-x: hidden; }
 
 .container-fluid {
