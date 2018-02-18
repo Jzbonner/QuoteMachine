@@ -18,61 +18,60 @@
 
   <!-- Fonts --> 
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poiret+One|Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Oleo+Script|Yellowtail" rel="stylesheet"> 
 </head>
 
 <body>
-  <!--Header Section-->
-  <div class="container-fluid text-center">
-    <div class="header">
-      <div class="row">
-        <div class="col-xs-1">
-          <div class="square">
-            <div class="square-offset"></div>
+  <div class="container-fluid"> 
+    <div class="row">
+      <!--Design Element: Sidebar-->
+      <div class="col-2 col-md-2 side-bar">
+        <div class="backgroundImg"></div>
+      </div>
+
+      <!--Design Element: Main Viewport-->
+      <div class="col-10 col-md-10 view">
+        <table>
+          <tr>
+            <th><i class="fas fa-book fa-4x"></i></th>
+            <th class="align"><i class="fas fa-pencil-alt fa-lg"></i><br><i class="far fa-sticky-note fa-lg"></i></th>
+          </tr>
+        </table>
+
+        <h2 class="title"> Quote <br>Machine. </h2>
+        <div class="row">
+          <div class="col-9 col-md-9">
+              <p class="quote"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ut! Laboriosam, nobis exercitationem porro ipsa minima quod voluptatum maxime illo ad. Magni iste aut natus illo rerum fuga? Nostrum, quos?</p>
+              <p class="author"> <i class="fas fa-caret-right"></i> Author Here</p>
           </div>
         </div>
-        <div class="col-xs-10">
-          <h1>Random Quote Machine.</h1>
+
+        <button type="button" class="btn btn-light">Quote <i class="fas fa-quote-right"></i></button>
+        <button type="button" class="btn btn-dark">Tweet <i class="fab fa-twitter"></i></button>
+      </div>
+    </div>  
+
+    <!--Section: Footer and Links-->  
+    <div class="row">
+      <div class="col-8">
+        <div class="footer">
+          <p class="credit">Jarrett Bonner <i class="fas fa-globe fa-xs"></i> 2018</p>
         </div>
-      </div>       
-    </div>    
-  </div>
-
-  <!--Quote Section-->
-  <div class="container-fluid main">
-    <div class="card">
-      <h2>Quote Here</h2>   
-    </div>
-  </div>
-
-  <!--Functionality Section -->
-  <div class="container-fluid select text-center">
-    <div class="row">
-      <div class="col-xs-4">
-        <button id="quote">Quote. <i class="fa fa-pencil-square" aria-hidden="true"></i></button>
       </div>
-      <div class="col-xs-3">
-        <button id="twttr">Tweet it. <i class="fa fa-twitter-square" aria-hidden="true"></i></button>
-      </div>
-    </div>   
-  </div>  
-
-  <!--Footer Section-->
-  <footer id="credit">
-    <div class="row">
-      <div class="col-xs-12">        
-        <table class="media">
-          <tr class="shift">
-            <td class="cell"><p class="credit">Jarrett Bonner <i class="fa fa-superpowers" aria-hidden="true"></i></p></td>
-            <td class="cell"><a href=""><img class="tdm-logo" src="https://goo.gl/O1Chgj" alt="contact" height="20px" width="20px"></a></td>
-            <td class="cell"><a href="https://github.com/Jzbonner"><img class="tdm-logo" src="https://goo.gl/TbkjwE" alt="contact" height="20px" width="20px"></a></td>
-            <td class="cell"><a href="https://twitter.com/jarrett_bonner"><img class="tdm-logo" src="https://goo.gl/QI1bnR" alt="contact" height="20px" width="20px"></a></td>
-            <td class="cell"><a href="https://www.linkedin.com/in/jarrett-bonner-28048339"><img class="tdm-logo" src="https://goo.gl/wcyzFc" alt="contact" height="20px" width="20px"></a></td>                      
+      <div class="col-4 links">
+        <table id="links">
+          <tr class="links">
+            <th class="links"><i class="fab fa-linkedin-in"></i></th>
+            <th class="links"><i class="fas fa-code-branch"></i></th>
+          </tr>
+          <tr class="links">
+            <th class="links"><i class="fas fa-envelope-open"></i></th>
+            <th class="links"><i class="fas fa-th-large"></i></th>
           </tr>
         </table>
       </div>
     </div>
-  </footer>
-</body>
+
+  </div>
+</body> 
 </html>

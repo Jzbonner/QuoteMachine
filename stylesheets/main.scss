@@ -1,167 +1,127 @@
-//Global Variables
-$mainbg: rgba(139,60,60, 0.6);
-$hoverbg: rgba(197,157,157, 0.6);
-$mainfont: 62.5%;
-$bodyfont: 1.4rem;
-$h1font: 2.4rem;
-$h2font: 2rem;
-$standTransition: all 0.3s ease-in-out;
-$mainfontclr: rgba(249,245,245, 0.9);
-$hoverfontclr: rgba(49,49,49, 0.9);
+$primaryColor: rgb(235,234,234); 
+$secondaryColor: rgba(152,236,209, 0.25);
+$contrastColor: rgba(5, 32, 24, 0.582); 
+$offsetColor: rgba(246,247,247, 0.2);
+$offsetFontColor: rgb(247,252,252); 
+$emphasizeFont: rgba(5, 32, 24, 0.6);
+$contentSpacing: 35px;
+$fontStandard: 17px; 
+$webkitResponse: all 0.3s ease-in-out;
 
-// HTML and Body styles
-html {
-    font-size: $mainfont;    
-}
+/*
+Style for layout and responsiveness 
+*/
+body { 
+    min-height: 100vh; 
+        
+} 
 
-body {       
-    background-image: url(https://goo.gl/5suJb3);
-    background-position: top center;
-    font-size: $bodyfont;        
-}
-
-html, body {
-    overflow-x: hidden;
-}
-
-.container-fluid{
-    padding: 1rem;
-}
-
-// Header
-.header {
-    background-color: $mainbg;
-    border-right: 8px solid #fff;
-    border-radius: 4px;
-    height: 10rem;
-    -webkit-transition: $standTransition;
-    transition:$standTransition;
-    &:hover {
-        background-color: $hoverbg;
-        border-right: 8px solid $mainbg;
-        border-radius:4px;
-    }
-    &:hover h1 {
-        color: $hoverfontclr;
-    }
-    &:hover .square .square-offset {
-        border: 1px solid white; 
-        animation-name: rotate;
-        animation-duration: 2s;  
-        animation-timing-function: linear;      
-        -webkit-animation-timing-function: linear;
-    }
-}
-
-@keyframes rotate {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
-}
-
-h1 {
-    color: $mainfontclr;
-    font-family: 'Raleway', serif;
-    font-size: $h1font;    
-    -webkit-transition: $standTransition;
-    transition: $standTransition;
-    vertical-align: middle;
-}
-
-.square {
-    background: rgba(49,49,49, 0.4);
-    border-radius: 2px;
-    height: 40px;
-    width: 40px;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);    
-}
-
-.square-offset{
-    background: rgba(120,179,210, 0.4);
-    border-radius: 2px;
-    height: 20px;    
-    width: 20px;	
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
-//Quote Card 
-.main {
+.side-bar {
+    background: url('/Images/leafbg.png');
+    background-position: top;
+    border-right: 12px solid $contrastColor;  
     border-radius: 3px;
-    height: 34rem;
-    margin: 0.5rem 0 0 0;
-}
-
-.card {
-    background: rgba(236,236,236, 0.8);
-    border-right: 15px solid white;
-    border-radius: 4px;
-    height: 30rem;
-    margin: 2rem 0 0 0;
-    
-}
-
-h2{
-    color: $hoverfontclr;
-    font-size: $h2font;
-    font-family: 'Raleway', serif;    
-    padding: 2rem 0 0 1rem; 
-}   
-
-//Button section
-.select {
-    margin: 0 0 3rem 0;
+    min-height: 100vh; 
+    padding: 0 0 0 0; 
     overflow: hidden;
+    .backgroundImg {
+        background-color: $secondaryColor;  
+        height: 100%;
+        min-height: 100vh;
+    }
+}
+
+.view {
+    background-color:$primaryColor; 
+    height: auto;
+    padding-top: $contentSpacing; 
+    padding-bottom: $contentSpacing;
+}
+
+/*
+Style for Content
+*/ 
+table tr th.align {
+    padding-left: $contentSpacing/2; 
+    width: 10vw; 
+}
+
+h2.title {
+    font-size: $fontStandard*2.2; 
+    padding-bottom: $contentSpacing; 
+    padding-top: $contentSpacing; 
+}
+
+p.quote{ 
+    border-bottom: 1px solid black; 
+    color: $emphasizeFont; 
+    font-size: $fontStandard; 
+    padding-bottom: $contentSpacing*1.2;
+    padding-left: $contentSpacing/5; 
+    text-align: left;
+}
+
+p.author {
+    font-size: $fontStandard;
+    text-align: right; 
+    padding-bottom: $contentSpacing; 
 }
 
 button {
-    background: rgba(236,236,236, 0.5);
-    border: 2px solid rgba(42,42,42, 0.1);
-    border-radius: 3px;
-    color: white;
-    font-weight: bold;
-    height: 6rem;
-    width: 10rem;
-    -webkit-transition: $standTransition;
-    transition: $standTransition;
+    -webkit-transform: scale(1,1); 
+    transform: scale(1,1);
+    -webkit-transition: $webkitResponse; 
+    transition: $webkitResponse; 
     &:hover {
-        border: 2px solid rgba(42,42,42, 0.9);
-        -webkit-transform: translateY(-0.5rem);
-        transform: translateY(-0.5rem);
-    }    
+        -webkit-transform: scale(1.1,1.1); 
+        transform: scale(1.1,1.1);
+    }
 }
 
-button#quote {
-    background: $mainbg;
+.footer {
+    background: $contrastColor;
+    border-right: 41px solid black;
+    border-right-style: ridge;
+    font-size: $fontStandard*0.85;
+    margin: 0 -15px 0 -15px; 
+    min-height: 15%;  
+    padding-top: $contentSpacing/3;
+    padding-bottom: $contentSpacing/3; 
+    text-align: center; 
+    p.credit {
+        color: $offsetFontColor;
+        font-family: 'Oleo Script', cursive;
+        padding-top: $contentSpacing/3; 
+    } 
 }
 
-button#twttr {
-    background: rgba(120,179,210, 0.6);
+.links { 
+    background-color: $offsetColor;
+    table#links { 
+        margin-top: $contentSpacing/3;
+        margin-left: $contentSpacing*0;
+        tr.links {
+            th.links {
+                cursor: pointer;
+                padding-left: $contentSpacing/4; 
+                padding-right: $contentSpacing/4
+            }
+        }
+    }
 }
 
-//Footer 
-footer {
-    background: rgba(42,42,42, 0.9);
-    height: 6rem;
-    margin: 0 auto;
-    padding: 0;
-    
+/*
+Media Queries
+*/
+
+@media screen and (min-width: 1080px) { 
+    h2.title {
+        font-size: $fontStandard*4; 
+    }
 }
 
-p.credit {
-    //border: 2px solid white;
-    border-radius: 2px;
-    color: white;
-    margin: .1rem 2rem 0 0;
-    padding: .5rem;
-    //text-align: center;
+@media screen and (min-width: 720px) {
+    h2.title {
+        font-size: $fontStandard*3.2; 
+    }
 }
-
-table.media {
-    margin: 3rem auto;
-    width: 30rem;
-    & tr.shift {
-        height: 6rem;
-    }   
-}
-

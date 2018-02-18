@@ -1,125 +1,95 @@
-html {
-  font-size: 62.5%; }
-
+/*
+Style for layout and responsiveness 
+*/
 body {
-  background-image: url(https://goo.gl/5suJb3);
-  background-position: top center;
-  font-size: 1.4rem; }
+  min-height: 100vh; }
 
-html, body {
-  overflow-x: hidden; }
-
-.container-fluid {
-  padding: 1rem; }
-
-.header {
-  background-color: rgba(139, 60, 60, 0.6);
-  border-right: 8px solid #fff;
-  border-radius: 4px;
-  height: 10rem;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-  .header:hover {
-    background-color: rgba(197, 157, 157, 0.6);
-    border-right: 8px solid rgba(139, 60, 60, 0.6);
-    border-radius: 4px; }
-  .header:hover h1 {
-    color: rgba(49, 49, 49, 0.9); }
-  .header:hover .square .square-offset {
-    border: 1px solid white;
-    animation-name: rotate;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    -webkit-animation-timing-function: linear; }
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-h1 {
-  color: rgba(249, 245, 245, 0.9);
-  font-family: 'Raleway', serif;
-  font-size: 2.4rem;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  vertical-align: middle; }
-
-.square {
-  background: rgba(49, 49, 49, 0.4);
-  border-radius: 2px;
-  height: 40px;
-  width: 40px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg); }
-
-.square-offset {
-  background: rgba(120, 179, 210, 0.4);
-  border-radius: 2px;
-  height: 20px;
-  width: 20px;
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg); }
-
-.main {
+.side-bar {
+  background: url("/Images/leafbg.png");
+  background-position: top;
+  border-right: 12px solid rgba(5, 32, 24, 0.582);
   border-radius: 3px;
-  height: 34rem;
-  margin: 0.5rem 0 0 0; }
-
-.card {
-  background: rgba(236, 236, 236, 0.8);
-  border-right: 15px solid white;
-  border-radius: 4px;
-  height: 30rem;
-  margin: 2rem 0 0 0; }
-
-h2 {
-  color: rgba(49, 49, 49, 0.9);
-  font-size: 2rem;
-  font-family: 'Raleway', serif;
-  padding: 2rem 0 0 1rem; }
-
-.select {
-  margin: 0 0 3rem 0;
+  min-height: 100vh;
+  padding: 0 0 0 0;
   overflow: hidden; }
+  .side-bar .backgroundImg {
+    background-color: rgba(152, 236, 209, 0.25);
+    height: 100%;
+    min-height: 100vh; }
+
+.view {
+  background-color: #ebeaea;
+  height: auto;
+  padding-top: 35px;
+  padding-bottom: 35px; }
+
+/*
+Style for Content
+*/
+table tr th.align {
+  padding-left: 17.5px;
+  width: 10vw; }
+
+h2.title {
+  font-size: 37.4px;
+  padding-bottom: 35px;
+  padding-top: 35px; }
+
+p.quote {
+  border-bottom: 1px solid black;
+  color: rgba(5, 32, 24, 0.6);
+  font-size: 17px;
+  padding-bottom: 42px;
+  padding-left: 7px;
+  text-align: left; }
+
+p.author {
+  font-size: 17px;
+  text-align: right;
+  padding-bottom: 35px; }
 
 button {
-  background: rgba(236, 236, 236, 0.5);
-  border: 2px solid rgba(42, 42, 42, 0.1);
-  border-radius: 3px;
-  color: white;
-  font-weight: bold;
-  height: 6rem;
-  width: 10rem;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
   button:hover {
-    border: 2px solid rgba(42, 42, 42, 0.9);
-    -webkit-transform: translateY(-0.5rem);
-    transform: translateY(-0.5rem); }
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1); }
 
-button#quote {
-  background: rgba(139, 60, 60, 0.6); }
+.footer {
+  background: rgba(5, 32, 24, 0.582);
+  border-right: 41px solid black;
+  border-right-style: ridge;
+  font-size: 14.45px;
+  margin: 0 -15px 0 -15px;
+  min-height: 15%;
+  padding-top: 11.6666666667px;
+  padding-bottom: 11.6666666667px;
+  text-align: center; }
+  .footer p.credit {
+    color: #f7fcfc;
+    font-family: 'Oleo Script', cursive;
+    padding-top: 11.6666666667px; }
 
-button#twttr {
-  background: rgba(120, 179, 210, 0.6); }
+.links {
+  background-color: rgba(246, 247, 247, 0.2); }
+  .links table#links {
+    margin-top: 11.6666666667px;
+    margin-left: 0px; }
+    .links table#links tr.links th.links {
+      cursor: pointer;
+      padding-left: 8.75px;
+      padding-right: 8.75px; }
 
-footer {
-  background: rgba(42, 42, 42, 0.9);
-  height: 6rem;
-  margin: 0 auto;
-  padding: 0; }
-
-p.credit {
-  border-radius: 2px;
-  color: white;
-  margin: .1rem 2rem 0 0;
-  padding: .5rem; }
-
-table.media {
-  margin: 3rem auto;
-  width: 30rem; }
-  table.media tr.shift {
-    height: 6rem; }
+/*
+Media Queries
+*/
+@media screen and (min-width: 1080px) {
+  h2.title {
+    font-size: 68px; } }
+@media screen and (min-width: 720px) {
+  h2.title {
+    font-size: 54.4px; } }
 
 /*# sourceMappingURL=main.css.map */
