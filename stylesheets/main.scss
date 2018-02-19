@@ -1,7 +1,8 @@
 $primaryColor: rgb(235,234,234); 
 $secondaryColor: rgba(152,236,209, 0.25);
 $contrastColor: rgba(5, 32, 24, 0.582); 
-$offsetColor: rgba(246,247,247, 0.2);
+$deepBlack:rgb(52,54,53); 
+$offsetColor: rgba(246,247,247, 0.9);
 $offsetFontColor: rgb(247,252,252); 
 $emphasizeFont: rgba(5, 32, 24, 0.6);
 $contentSpacing: 35px;
@@ -11,16 +12,16 @@ $webkitResponse: all 0.3s ease-in-out;
 /*
 Style for layout and responsiveness 
 */
+
 body { 
     min-height: 100vh; 
         
-} 
+}   
 
 .side-bar {
-    background: url('/Images/leafbg.png');
+    background: url(https://goo.gl/9fjWCw);
     background-position: top;
     border-right: 12px solid $contrastColor;  
-    border-radius: 3px;
     min-height: 100vh; 
     padding: 0 0 0 0; 
     overflow: hidden;
@@ -41,6 +42,7 @@ body {
 /*
 Style for Content
 */ 
+
 table tr th.align {
     padding-left: $contentSpacing/2; 
     width: 10vw; 
@@ -50,10 +52,12 @@ h2.title {
     font-size: $fontStandard*2.2; 
     padding-bottom: $contentSpacing; 
     padding-top: $contentSpacing; 
+    -webkit-transition: $webkitResponse; 
+    transition: $webkitResponse; 
 }
 
 p.quote{ 
-    border-bottom: 1px solid black; 
+    border-bottom: 1px solid $deepBlack; 
     color: $emphasizeFont; 
     font-size: $fontStandard; 
     padding-bottom: $contentSpacing*1.2;
@@ -63,8 +67,9 @@ p.quote{
 
 p.author {
     font-size: $fontStandard;
-    text-align: right; 
     padding-bottom: $contentSpacing; 
+    text-align: right; 
+    
 }
 
 button {
@@ -78,37 +83,28 @@ button {
     }
 }
 
-.footer {
-    background: $contrastColor;
-    border-right: 41px solid black;
-    border-right-style: ridge;
-    font-size: $fontStandard*0.85;
-    margin: 0 -15px 0 -15px; 
-    min-height: 15%;  
-    padding-top: $contentSpacing/3;
-    padding-bottom: $contentSpacing/3; 
-    text-align: center; 
-    p.credit {
-        color: $offsetFontColor;
-        font-family: 'Oleo Script', cursive;
-        padding-top: $contentSpacing/3; 
-    } 
-}
-
-.links { 
-    background-color: $offsetColor;
-    table#links { 
-        margin-top: $contentSpacing/3;
-        margin-left: $contentSpacing*0;
-        tr.links {
-            th.links {
-                cursor: pointer;
-                padding-left: $contentSpacing/4; 
-                padding-right: $contentSpacing/4
-            }
+table#links {   
+    float: right;
+    margin-top: -$contentSpacing;
+    margin-bottom: $contentSpacing; 
+    -webkit-transition: $webkitResponse; 
+    transition: $webkitResponse; 
+    tr.links {
+        th.links {
+            cursor: pointer;
+            padding-left: $contentSpacing/4; 
+            padding-right: $contentSpacing/4;
         }
     }
 }
+
+p.credit {
+    color: $deepBlack;
+    font-size: $fontStandard/1.5; 
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 100; 
+    padding-top: $contentSpacing/2;
+} 
 
 /*
 Media Queries
