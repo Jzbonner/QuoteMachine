@@ -3,27 +3,29 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/GNqEta"/>
+  <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/GNqEta" />
   <title>Quote Machine</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CDN and links to stylesheets -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheets/main.css" media="screen">  
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stylesheets/main.css" media="screen">
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
   <script src="js/main.js" type="text/javascript"></script>
 
-  <!-- Fonts --> 
+  <!-- Fonts -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
 </head>
 
 
 <body>
-  <div class="container-fluid"> 
+  <div class="container-fluid">
     <div class="row">
       <!--Design Element: Sidebar-->
       <div class="col-2 col-md-2 side-bar">
@@ -32,38 +34,71 @@
 
       <!--Design Element: Main Viewport-->
       <div class="col-10 col-md-10 view">
-          <div class="row">
-              <div class="col-12">
-                  <table id="links">
-                      <tr class="links">
-                        <th class="links"><a href="https://www.linkedin.com/in/jarrett-bonner-28048339/"><i class="fab fa-linkedin-in"></i></a></th>
-                        <th class="links"><a href="https://github.com/Jzbonner"><i class="fas fa-code-branch"></a></i></th>
-                        <th class="links"><a href="mailto:jarrett.bonner@gmail.com"><i class="fas fa-envelope-open"></i></a></th>
-                        <th class="links"><a href=""><i class="fas fa-th-large"></i></a></th>
-                        <th class="links"><p class="credit">Jarrett Bonner <i class="fas fa-globe fa-xs"></i> 2018</p></th>
-                      </tr>
-                    </table>
-              </div>
-            </div>
+        <div class="row">
+          <div class="col-12">
+            <table id="links">
+              <tr class="links">
+                <th class="links">
+                  <a href="https://www.linkedin.com/in/jarrett-bonner-28048339/">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </th>
+                <th class="links">
+                  <a href="https://github.com/Jzbonner">
+                    <i class="fas fa-code-branch"></i>
+                  </a>                  
+                </th>
+                <th class="links">
+                  <a href="mailto:jarrett.bonner@gmail.com">
+                    <i class="fas fa-envelope-open"></i>
+                  </a>
+                </th>
+                <th class="links">
+                  <a href="">
+                    <i class="fas fa-th-large"></i>
+                  </a>
+                </th>
+                <th class="links">
+                  <p class="credit">Jarrett Bonner
+                    <i class="fas fa-globe fa-xs"></i> 2018</p>
+                </th>
+              </tr>
+            </table>
+          </div>
+        </div>
         <table>
           <tr>
-            <th><i class="fas fa-book fa-4x"></i></th>
-            <th class="align"><i class="fas fa-pencil-alt fa-lg"></i><br><i class="far fa-sticky-note fa-lg"></i></th>
+            <th>
+              <i class="fas fa-book fa-4x"></i>
+            </th>
+            <th class="align">
+              <i class="fas fa-pencil-alt fa-lg"></i>
+              <br>
+              <i class="far fa-sticky-note fa-lg"></i>
+            </th>
           </tr>
         </table>
 
-        <h2 class="title"> Quote <br>Machine. </h2>
+        <h2 class="title"> Quote
+          <br>Machine. </h2>
         <div class="row">
           <div class="col-9 col-md-9">
-              <p class="quote" id="quote-content"></p>
-              <p class="author" id="quote-title"> <i class="fas fa-caret-right"></i></p>
+            <p class="quote" id="quote-content"></p>
+            <p class="author" id="quote-title">
+              <i class="fas fa-caret-right"></i>
+            </p>
           </div>
         </div>
 
-        <button type="button" id="generate-quote" class="btn btn-light">Quote <i class="fas fa-quote-right"></i></button>
-        <button type="button" id="tweet-quote" class="btn btn-dark">Tweet <i class="fab fa-twitter"></i></button>
+        <button type="button" id="generate-quote" class="btn btn-light">Quote
+          <i class="fas fa-quote-right"></i>
+        </button>
+        <button type="button" id="tweet-quote" class="btn btn-dark">Tweet
+          <i class="fab fa-twitter"></i>
+        </button>
       </div>
-    </div>  
+    </div>
   </div>
-</body> 
+</body>
+
 </html>
