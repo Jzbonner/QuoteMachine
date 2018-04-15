@@ -5,8 +5,8 @@ body {
   min-height: 100vh; }
 
 .side-bar {
-  background: url(https://goo.gl/9fjWCw);
-  background-position: top;
+  background: url(http://bit.ly/2H3FsVy);
+  background-position: center;
   border-right: 12px solid rgba(5, 32, 24, 0.582);
   min-height: 100vh;
   padding: 0 0 0 0;
@@ -39,15 +39,18 @@ h2.title {
 p.quote {
   border-bottom: 1px solid #343635;
   color: rgba(5, 32, 24, 0.6);
-  font-size: 17px;
+  font-size: 28.9px;
   padding-bottom: 42px;
   padding-left: 7px;
   text-align: left; }
 
 p.author {
-  font-size: 17px;
+  font-size: 22.1px;
   padding-bottom: 35px;
-  text-align: right; }
+  text-align: center;
+  font-style: italic; }
+  p.author i#separator {
+    padding-left: 35px; }
 
 button {
   -webkit-transform: scale(1, 1);

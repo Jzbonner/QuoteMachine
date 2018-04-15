@@ -19,8 +19,8 @@ body {
 }   
 
 .side-bar {
-    background: url(https://goo.gl/9fjWCw);
-    background-position: top;
+    background: url(http://bit.ly/2H3FsVy);
+    background-position: center;
     border-right: 12px solid $contrastColor;  
     min-height: 100vh; 
     padding: 0 0 0 0; 
@@ -59,16 +59,20 @@ h2.title {
 p.quote{ 
     border-bottom: 1px solid $deepBlack; 
     color: $emphasizeFont; 
-    font-size: $fontStandard; 
+    font-size: $fontStandard*1.7; 
     padding-bottom: $contentSpacing*1.2;
     padding-left: $contentSpacing/5; 
     text-align: left;
 }
 
 p.author {
-    font-size: $fontStandard;
-    padding-bottom: $contentSpacing; 
-    text-align: right; 
+    font-size: $fontStandard*1.3;
+    padding-bottom: $contentSpacing;
+    text-align: center; 
+    font-style: italic; 
+    i#separator {
+        padding-left: $contentSpacing;
+    }
     
 }
 
