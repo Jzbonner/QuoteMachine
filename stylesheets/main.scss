@@ -1,5 +1,5 @@
 $primaryColor: rgb(235,234,234); 
-$secondaryColor: rgba(152,236,209, 0.25);
+$secondaryColor: rgba(152,236,209, 0.10);
 $contrastColor: rgba(5, 32, 24, 0.582); 
 $deepBlack:rgb(52,54,53); 
 $offsetColor: rgba(246,247,247, 0.9);
@@ -20,6 +20,7 @@ body {
 
 .side-bar {
     background: url(http://bit.ly/2H3FsVy);
+    background-repeat: no-repeat;
     background-position: center;
     border-right: 12px solid $contrastColor;  
     min-height: 100vh; 
@@ -59,31 +60,33 @@ h2.title {
 p.quote{ 
     border-bottom: 1px solid $deepBlack; 
     color: $emphasizeFont; 
-    font-size: $fontStandard*1.7; 
+    font-size: $fontStandard; 
     padding-bottom: $contentSpacing*1.2;
     padding-left: $contentSpacing/5; 
     text-align: left;
+    -webkit-transition: $webkitResponse; 
+    transition: $webkitResponse; 
 }
 
 p.author {
-    font-size: $fontStandard*1.3;
+    font-size: $fontStandard*1.1;
     padding-bottom: $contentSpacing;
     text-align: center; 
-    font-style: italic; 
-    i#separator {
-        padding-left: $contentSpacing;
-    }
-    
+    font-style: italic;    
 }
 
 button {
-    -webkit-transform: scale(1,1); 
-    transform: scale(1,1);
+    -webkit-transform: scale(1,1), translateY(0px); 
+    transform: scale(1,1), translateY(0px);
     -webkit-transition: $webkitResponse; 
     transition: $webkitResponse; 
     &:hover {
         -webkit-transform: scale(1.1,1.1); 
         transform: scale(1.1,1.1);
+    }
+    &:active {
+        -webkit-transform: translateY(5px); 
+        transform: translateY(5px);
     }
 }
 
@@ -114,14 +117,32 @@ p.credit {
 Media Queries
 */
 
-@media screen and (min-width: 1080px) { 
+@media screen and (min-width: 480px) {
     h2.title {
-        font-size: $fontStandard*4; 
+        font-size: $fontStandard*3.2; 
+    }
+
+    p.quote {
+        font-size: $fontStandard*1.2; 
     }
 }
 
 @media screen and (min-width: 720px) {
     h2.title {
         font-size: $fontStandard*3.2; 
+    }
+
+    p.quote {
+        font-size: $fontStandard*1.6; 
+    }
+}
+
+@media screen and (min-width: 1080px) { 
+    h2.title {
+        font-size: $fontStandard*4; 
+    }
+
+    p.quote {
+        font-size: $fontStandard*2; 
     }
 }

@@ -6,13 +6,14 @@ body {
 
 .side-bar {
   background: url(http://bit.ly/2H3FsVy);
+  background-repeat: no-repeat;
   background-position: center;
   border-right: 12px solid rgba(5, 32, 24, 0.582);
   min-height: 100vh;
   padding: 0 0 0 0;
   overflow: hidden; }
   .side-bar .backgroundImg {
-    background-color: rgba(152, 236, 209, 0.25);
+    background-color: rgba(152, 236, 209, 0.1);
     height: 100%;
     min-height: 100vh; }
 
@@ -39,27 +40,30 @@ h2.title {
 p.quote {
   border-bottom: 1px solid #343635;
   color: rgba(5, 32, 24, 0.6);
-  font-size: 28.9px;
+  font-size: 17px;
   padding-bottom: 42px;
   padding-left: 7px;
-  text-align: left; }
+  text-align: left;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
 
 p.author {
-  font-size: 22.1px;
+  font-size: 18.7px;
   padding-bottom: 35px;
   text-align: center;
   font-style: italic; }
-  p.author i#separator {
-    padding-left: 35px; }
 
 button {
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1), translateY(0px);
+  transform: scale(1, 1), translateY(0px);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
   button:hover {
     -webkit-transform: scale(1.1, 1.1);
     transform: scale(1.1, 1.1); }
+  button:active {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px); }
 
 table#links {
   float: right;
@@ -82,11 +86,23 @@ p.credit {
 /*
 Media Queries
 */
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 480px) {
   h2.title {
-    font-size: 68px; } }
+    font-size: 54.4px; }
+
+  p.quote {
+    font-size: 20.4px; } }
 @media screen and (min-width: 720px) {
   h2.title {
-    font-size: 54.4px; } }
+    font-size: 54.4px; }
+
+  p.quote {
+    font-size: 27.2px; } }
+@media screen and (min-width: 1080px) {
+  h2.title {
+    font-size: 68px; }
+
+  p.quote {
+    font-size: 34px; } }
 
 /*# sourceMappingURL=main.css.map */
