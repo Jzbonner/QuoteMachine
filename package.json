@@ -1,0 +1,23 @@
+{
+  "name": "jzbonner",
+  "version": "1.0.0",
+  "description": "packages for Quote Machine repo",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jzbonner/QuoteMachine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jzbonner/QuoteMachine/issues"
+  },
+  "homepage": "https://github.com/Jzbonner/QuoteMachine#readme"
+}

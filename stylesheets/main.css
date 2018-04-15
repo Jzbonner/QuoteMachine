@@ -1,0 +1,112 @@
+/*
+Style for layout and responsiveness 
+*/
+body {
+  min-height: 100vh; }
+
+.side-bar {
+  background: url(http://bit.ly/2H3FsVy);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-right: 12px solid rgba(5, 32, 24, 0.582);
+  min-height: 100vh;
+  padding: 0 0 0 0;
+  overflow: hidden; }
+  .side-bar .backgroundImg {
+    background-color: rgba(152, 236, 209, 0.1);
+    height: 100%;
+    min-height: 100vh; }
+
+.view {
+  background-color: #ebeaea;
+  height: auto;
+  padding-top: 35px;
+  padding-bottom: 35px; }
+
+/*
+Style for Content
+*/
+table tr th.align {
+  padding-left: 17.5px;
+  width: 10vw; }
+
+h2.title {
+  font-size: 37.4px;
+  padding-bottom: 35px;
+  padding-top: 35px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+p.quote {
+  border-bottom: 1px solid #343635;
+  color: rgba(5, 32, 24, 0.6);
+  font-size: 17px;
+  padding-bottom: 42px;
+  padding-left: 7px;
+  text-align: left;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+p.author {
+  font-size: 18.7px;
+  padding-bottom: 35px;
+  text-align: center;
+  font-style: italic; }
+
+button {
+  -webkit-transform: scale(1, 1), translateY(0px);
+  transform: scale(1, 1), translateY(0px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  button:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  button:active {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+
+table#links {
+  float: right;
+  margin-top: -35px;
+  margin-bottom: 35px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  table#links tr.links th.links {
+    cursor: pointer;
+    padding-left: 8.75px;
+    padding-right: 8.75px; }
+
+p.credit {
+  color: #343635;
+  font-size: 11.3333333333px;
+  font-family: 'Proza Libre', sans-serif;
+  font-weight: 100;
+  padding-top: 17.5px; }
+
+/*
+Media Queries
+*/
+@media screen and (min-width: 480px) {
+  h2.title {
+    font-size: 54.4px; }
+
+  p.quote {
+    font-size: 20.4px; } }
+@media screen and (min-width: 720px) {
+  h2.title {
+    font-size: 54.4px; }
+
+  p.quote {
+    font-size: 27.2px; } }
+@media screen and (min-width: 1080px) {
+  h2.title {
+    font-size: 68px; }
+
+  p.quote {
+    font-size: 34px; } }
+
+/*# sourceMappingURL=main.css.map */
