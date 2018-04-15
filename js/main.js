@@ -25,5 +25,3 @@ function tweetQuote() {
     window.open(myURL, 'twitter');
     return false; 
 };
-
-
