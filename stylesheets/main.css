@@ -5,15 +5,14 @@ body {
   min-height: 100vh; }
 
 .side-bar {
-  background: url(http://bit.ly/2H3FsVy);
+  background: url(/Images/qmbg.png);
   background-repeat: no-repeat;
-  background-position: center;
   border-right: 12px solid rgba(5, 32, 24, 0.582);
   min-height: 100vh;
   padding: 0 0 0 0;
   overflow: hidden; }
   .side-bar .backgroundImg {
-    background-color: rgba(152, 236, 209, 0.1);
+    background-color: rgba(152, 236, 209, 0.35);
     height: 100%;
     min-height: 100vh; }
 
@@ -43,9 +42,7 @@ p.quote {
   font-size: 17px;
   padding-bottom: 42px;
   padding-left: 7px;
-  text-align: left;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+  text-align: left; }
 
 p.author {
   font-size: 18.7px;
@@ -68,6 +65,14 @@ button {
     transform: translateY(5px);
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
+
+button#tweet-quote {
+  margin-left: 35px; }
+
+.button-row {
+  display: block;
+  text-align: left;
+  padding-left: 35px; }
 
 table#links {
   float: right;

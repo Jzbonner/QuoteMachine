@@ -8,10 +8,11 @@ function getQuote() {
             var $title = $('#quote-title').html('<i class="far fa-arrow-alt-circle-right"></i>   ' + post.title);
             var $content = $('#quote-content').html(post.content);
         }
-    });
+    }); 
 
-    document.getElementById('quote-title').innerHTML = $title; 
-    document.getElementById('quote-content').innerHTML = $content; 
+    //animations for quote and author display
+    $(".quote").fadeOut("slow").fadeIn("slow");
+    $(".author").fadeOut("slow").fadeIn("slow");
 };
 
 //initialize the first quote to appear prior to the Action Event.

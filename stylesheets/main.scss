@@ -1,5 +1,5 @@
 $primaryColor: rgb(235,234,234); 
-$secondaryColor: rgba(152,236,209, 0.10);
+$secondaryColor: rgba(152,236,209, 0.35);
 $contrastColor: rgba(5, 32, 24, 0.582); 
 $deepBlack:rgb(52,54,53); 
 $offsetColor: rgba(246,247,247, 0.9);
@@ -18,9 +18,9 @@ body {
 }   
 
 .side-bar {
-    background: url(http://bit.ly/2H3FsVy);
+    //background: url(http://bit.ly/2H3FsVy);
+    background: url(/Images/qmbg.png);
     background-repeat: no-repeat;
-    background-position: center;
     border-right: 12px solid $contrastColor;  
     min-height: 100vh; 
     padding: 0 0 0 0; 
@@ -63,8 +63,6 @@ p.quote{
     padding-bottom: $contentSpacing*1.2;
     padding-left: $contentSpacing/5; 
     text-align: left;
-    -webkit-transition: $webkitResponse; 
-    transition: $webkitResponse; 
 }
 
 p.author {
@@ -91,6 +89,16 @@ button {
         -webkit-transition: $webkitResponse; 
         transition: $webkitResponse; 
     }
+}
+
+button#tweet-quote {
+    margin-left: $contentSpacing; 
+}
+
+.button-row {
+    display: block; 
+    text-align: left;  
+    padding-left: $contentSpacing;
 }
 
 table#links {   
